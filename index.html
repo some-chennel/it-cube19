@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЦЦО IT-куб</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="home-page">
+
+    <!-- шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="https://itcube24.ru/static/assets/img/logo-it.png" alt="Логотип"></a>
+                <span>IT-CUBE</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="active">Главная</a>
+                <a href="directions.html">Направления</a>
+                <a href="profile.html">Профиль</a>
+                <a href="login.html">Войти</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <img src="img/moon1.svg" alt="Тёмная тема" id="themeIcon" width="24" height="24">
+                </button>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- блок приветствия -->
+    <section class="hero-main">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Центр цифрового образования детей<br>«IT-Куб. Абакан»</h1>
+                </div>
+                <div class="hero-image">
+                    <img src="https://itcube24.ru/static/assets/img/logo-it.png" alt="IT-куб логотип">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- слайдер направлений -->
+    <section class="directions-section">
+        <div class="container">
+            <div class="directions-header">
+                <h2>Наши направления</h2>
+                <a href="directions.html" class="catalog-link">в каталог →</a>
+            </div>
+            <div class="sliders">
+                <div class="slider-track">
+                    <a href="python-direction.html" class="direction-card">
+                        <div class="card-image"><img src="img/1pk.png" alt="Python"></div>
+                        <h3 class="card-name">Программирование на Python</h3>
+                    </a>
+                    <a href="#" class="direction-card">
+                        <div class="card-image"><img src="img/ht1.png" alt="Java"></div>
+                        <h3 class="card-name">Программирование на Java</h3>
+                    </a>
+                    <a href="#" class="direction-card">
+                        <div class="card-image"><img src="img/k1.png" alt="Minecraft"></div>
+                        <h3 class="card-name">Программирование в Minecraft</h3>
+                    </a>
+                    <a href="#" class="direction-card">
+                        <div class="card-image"><img src="img/2pk.png" alt="Frontend"></div>
+                        <h3 class="card-name">Дизайн и Frontend разработка</h3>
+                    </a>
+                    <a href="#" class="direction-card">
+                        <div class="card-image"><img src="img/ht2.png" alt="VR/AR"></div>
+                        <h3 class="card-name">Разработка VR/AR-приложений</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- информация о центре -->
+    <section class="about-section">
+        <div class="container">
+            <h2>О центре</h2>
+            <p class="about-text">
+                Центр цифрового образования детей «IT-куб» — это современная образовательная среда,
+                где дети и подростки могут получить знания и навыки в сфере информационных технологий.
+                Мы предлагаем 18 направлений обучения: от программирования и веб-разработки до робототехники
+                и создания VR/AR-приложений. Наши педагоги — практикующие специалисты, которые помогут
+                каждому ученику раскрыть свой потенциал и подготовиться к будущей профессии в IT-сфере.
+            </p>
+        </div>
+    </section>
+
+    <!-- слайдер новостей -->
+    <section class="news-section">
+        <div class="container">
+            <div class="news-header">
+                <h2>Новости центра</h2>
+            </div>
+            <div class="news-slider">
+                <div class="news-track">
+                    <div class="news-card">
+                        <div class="news-image"><img src="img/news1.jpg" alt="Новость 1"></div>
+                        <div class="news-content">
+                            <h3 class="news-title">Открытие набора на 2026/2027 учебный год</h3>
+                            <p class="news-description">С 1 июня начинается приём заявок на все 18 направлений. Успейте
+                                записаться – количество мест ограничено!</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image"><img src="img/news2.jpg" alt="Новость 2"></div>
+                        <div class="news-content">
+                            <h3 class="news-title">Победа в республиканском хакатоне</h3>
+                            <p class="news-description">Команда «IT-куб» заняла 1 место в хакатоне по программным
+                                решениям для бизнеса. Поздравляем ребят и наставников!</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image"><img src="img/news3.jpg" alt="Новость 3"></div>
+                        <div class="news-content">
+                            <h3 class="news-title">Мастер-класс по VR/AR-разработке</h3>
+                            <p class="news-description">20 июня приглашаем всех желающих на бесплатный мастер-класс от
+                                партнёров центра. Знакомство с Varwin и создание первого приложения.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image"><img src="img/news4.jpg" alt="Новость 4"></div>
+                        <div class="news-content">
+                            <h3 class="news-title">Новый курс «Системное администрирование»</h3>
+                            <p class="news-description">Старт в сентябре. Научитесь настраивать серверы, работать с
+                                сетями и обеспечивать безопасность.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image"><img src="img/news1.jpg" alt="Новость 1"></div>
+                        <div class="news-content">
+                            <h3 class="news-title">Открытие набора на 2026/2027 учебный год</h3>
+                            <p class="news-description">С 1 июня начинается приём заявок на все 18 направлений. Успейте
+                                записаться – количество мест ограничено!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- раздел контактов -->
+    <section class="contacts-section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contacts-wrapper">
+                <!-- карта -->
+                <div class="map-container">
+                    <div id="yandex-map" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="contacts-info">
+                    <div class="contact-item">
+                        <img src="img/location.svg" alt="Адрес" class="contact-icon" width="32" height="32">
+                        <div class="contact-text">
+                            <p>ул. Пушкина, 30, Абакан</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="img/telephone.svg" alt="Телефон" class="contact-icon" width="32" height="32">
+                        <div class="contact-text">
+                            <p><a href="#">+7 (953) 259-08-58</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="img/mail.svg" alt="Email" class="contact-icon" width="32" height="32">
+                        <div class="contact-text">
+                            <p><a href="#">it-cube19@r-19.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="img/www.svg" alt="ВКонтакте" class="contact-icon" width="32" height="32">
+                        <div class="contact-text">
+                            <p><a href="#" target="_blank">Группа ВКонтакте</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- подвал -->
+    <footer class="footer-new">
+        <div class="container">
+            <div class="footer-brand">
+                <h3 class="footer-brand-logo">IT-CUBE</h3>
+                <p class="footer-brand-copy">© 2026. Все права защищены.</p>
+            </div>
+            <div class="footer-docs">
+                <a href="#">Документы</a>
+                <a href="#">Согласие на обработку персональных данных</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-logos">
+                <div class="footer-logo-item"><img src="img/natsproekt.png" alt="ХПК"></div>
+                <div class="footer-logo-item"><img src="img/perviekhpk.png" alt="Движение 1"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- получения доступа к api яндекс карты-->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e39751c2-e4f2-4448-b32c-cfaf0dac00c1&lang=ru_RU"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

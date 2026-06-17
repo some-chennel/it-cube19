@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="https://itcube24.ru/static/assets/img/logo-it.png" alt="Логотип"></a>
+                <span>IT-CUBE</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="active">Главная</a>
+                <a href="directions.html">Направления</a>
+                <a href="profile.html">Профиль</a>
+                <a href="login.html">Войти</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <img src="img/moon1.svg" alt="Тёмная тема" id="themeIcon" width="24" height="24">
+                </button>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- шОсновной контент -->
+    <main class="form-page">
+        <div class="form-card">
+            <div id="formView">
+                <div class="form-title">Запишитесь на бесплатное обучение в ЦЦО «IT-куб»</div>
+                <form id="regForm" novalidate>
+                    <div class="input-group">
+                        <input type="text" class="input-field" id="name" placeholder="Ваше имя">
+                        <div class="error-text" id="errName">Пожалуйста, введите ваше имя</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" class="input-field" id="phone" placeholder="+7 (999) 000-00-00">
+                        <div class="error-text" id="errPhone">Проверьте правильность номера телефона</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" class="input-field" id="email" placeholder="Ваш Email">
+                        <div class="error-text" id="errEmail">Некорректный адрес электронной почты</div>
+                    </div>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="checkbox1">
+                        <span>Я даю согласие на <a href="#">обработку персональных данных</a> и принимаю условия <a
+                                href="#">пользовательского соглашения</a>.</span>
+                    </label>
+                    <div class="error-text" id="errcheckbox1" style="margin-top:-15px; margin-bottom:15px;">Необходимо
+                        согласие на обработку данных</div>
+
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="checkbox2">
+                        <span>Я согласен(на) получать информационные рассылки и звонки от ЦЦО «IT-куб»</span>
+                    </label>
+                    <div class="error-text" id="errcheckbox2" style="margin-top:-15px; margin-bottom:15px;">Необходимо
+                        согласие на получение уведомлений</div>
+                    <button type="submit" class="btn-submit">Записаться</button>
+                </form>
+            </div>
+
+            <!-- модальное окно потверждения -->
+            <div id="successView" class="success-view">
+                <h3>Заявка отправлена!</h3>
+                <p>Мы свяжемся с вами в ближайшее время</p>
+                <a href="index.html" class="btn-submit">На главную страницу</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- подвал -->
+    <footer class="footer-new">
+        <div class="container">
+            <div class="footer-brand">
+                <h3 class="footer-brand-logo">IT-CUBE</h3>
+                <p class="footer-brand-copy">© 2026. Все права защищены.</p>
+            </div>
+            <div class="footer-docs">
+                <a href="#">Документы</a>
+                <a href="#">Согласие на обработку персональных данных</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-logos">
+                <div class="footer-logo-item">
+                    <img src="img/natsproekt.png" alt="ХПК">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="img/perviekhpk.png" alt="Движение 1">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
