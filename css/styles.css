@@ -215,6 +215,7 @@ body {
   width: 90%;
   height: 80%;
   display: block;
+  object-fit: cover;
 }
 
 .card-name {
@@ -1108,6 +1109,10 @@ body {
     padding: 40px 0;
   }
 
+  .enroll-btn {
+    width: 100%;
+  }
+
   .hero-text h1 {
     font-size: 32px;
   }
@@ -1244,5 +1249,141 @@ body {
 
   .form-title {
     font-size: 24px;
+  }
+}
+
+/* страница профиля */
+.profile-page {
+  min-height: calc(100vh - 142px);
+  padding: 40px 0 80px;
+  background: var(--bg-section);
+}
+
+.profile-card {
+  background: var(--card-white);
+  border-radius: 20px;
+  padding: 32px 40px;
+  box-shadow: var(--shadow-sm);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 8px;
+}
+
+.profile-birthdate {
+  font-size: 15px;
+  color: var(--text-gray);
+  margin: 0;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  align-items: start;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.info-item label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 15px;
+  color: var(--text-gray);
+  margin: 0;
+  padding: 10px 0;
+}
+
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-menu-item {
+  background: var(--card-white);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+}
+
+.profile-menu-item:hover {
+  background: var(--bg-light);
+}
+
+.profile-menu-item .arrow {
+  font-size: 20px;
+  color: var(--brand-blue);
+}
+
+
+@media (max-width: 900px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-menu {
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .profile-info h1 {
+    font-size: 22px;
+  }
+
+  .info-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .profile-info-block {
+    padding: 20px;
   }
 }
