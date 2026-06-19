@@ -554,20 +554,10 @@ body {
 
 /*главная страница*/
 .hero-main {
-  background-image: url('https://itcube24.ru/static/assets/img/hero-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
-}
-
-[data-theme="dark"] .hero-main {
-  background-image: linear-gradient(rgba(20, 23, 28, 0.6), rgba(20, 23, 28, 0.6)),
-    url('https://itcube24.ru/static/assets/img/hero-bg.png');
 }
 
 .hero-content {
